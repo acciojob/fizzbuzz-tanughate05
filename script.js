@@ -1,12 +1,16 @@
 //your JS code here. If required.
 
-const FizzBuzz2 = function() {
-	const arr = [];
-	arr.length = 20;
-	for(let i = 1; i <= arr.length; i++) {
-		arr[i-1] = ((i % 3) ? '' : 'Fizz') + ((i % 5) ? '' : 'Buzz') || i;
+for(let i=1;i<=20;i++){
+	if(i%3===0){
+		alert("Fizz");
 	}
-	return arr.join(', ');
-};
-
-console.log(FizzBuzz2());
+    else if(i%5===0){
+        alert("Buzz");
+    }
+    else if(i%3===0 && i%5===0){
+        alert("FizzBuzz");
+    }
+    else{
+        alert(i);
+    }
+}
